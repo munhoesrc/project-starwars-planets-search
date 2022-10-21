@@ -16,7 +16,6 @@ function Table() {
         <tr>
           <th>Name</th>
           <th>Climate</th>
-          <th>Created</th>
           <th>Diameter</th>
           <th>Edited</th>
           <th>Films</th>
@@ -25,6 +24,7 @@ function Table() {
           <th>Population</th>
           <th>Rotation Period</th>
           <th>Surface Water</th>
+          <th>Created</th>
           <th>Terrain</th>
           <th>url</th>
         </tr>
@@ -41,9 +41,6 @@ function Table() {
                   </td>
                   <td>
                     {e.climate}
-                  </td>
-                  <td>
-                    {e.created}
                   </td>
                   <td>
                     {e.diameter}
@@ -72,6 +69,9 @@ function Table() {
                   </td>
                   <td>
                     {e.surface_water}
+                  </td>
+                  <td>
+                    {e.created}
                   </td>
                   <td>
                     {e.terrain}
