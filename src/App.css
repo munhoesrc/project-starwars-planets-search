@@ -1,7 +1,37 @@
+@font-face {
+  font-family: StarWars;
+  font-style: normal;
+  src: local('StarWars') , url('./fonts/Starjout.ttf') format('truetype');
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+.title {
+  font-family: StarWars , serif;
+  font-size: 36pt;
+  font-weight: 500;
+  margin: 2vw 0 1vw;
+  text-align: center;
+}
+
+.input__search {
+  text-align: center;
+}
+
+.input__search > input {
+  background: #2f2d36;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 10px 40px black;
+  color: #f0ffffde;
+  font-size: 12pt;
+  outline: none;
+  padding: 15px;
+  width: 20%;
 }
 
 table {

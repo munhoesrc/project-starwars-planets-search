@@ -13,7 +13,7 @@ function Filter() {
 
   return (
     <div>
-      <div>
+      <div className="input__search">
         <input
           type="text"
           // name="name-filter"
