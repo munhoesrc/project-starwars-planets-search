@@ -11,7 +11,7 @@ function Table() {
         <Filter />
       </div>
       <br />
-      <table data-testid="tabela">
+      <table data-testid="tabela" className="customers">
 
         <tr>
           <th>Name</th>
@@ -29,7 +29,7 @@ function Table() {
           <th>url</th>
         </tr>
 
-        <tbody>
+        <tbody className="style-tbody">
           {
             (data
               .filter((e) => e.name.toLowerCase()

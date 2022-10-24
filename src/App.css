@@ -10,9 +10,17 @@
   padding: 0;
 }
 
+body {
+  background: url('./img/fundo-star-wars\ \(1\)\ 1.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
 .title {
   font-family: StarWars , serif;
-  font-size: 36pt;
+  font-size: 42pt;
   font-weight: 500;
   margin: 2vw 0 1vw;
   text-align: center;
@@ -26,7 +34,7 @@
   background: #2f2d36;
   border: none;
   border-radius: 10px;
-  box-shadow: 0 10px 40px black;
+  box-shadow: 0 10px 40px white;
   color: #f0ffffde;
   font-size: 12pt;
   outline: none;
@@ -43,25 +51,45 @@
   outline: none;
 }
 
-table {
-  border-collapse: collapse;
-  font-family: Times New Roman , Times , serif;
-
-  /* display: inline-block; */
-  margin: auto;
-
+/* STYLE DA TABLEA */
+.style-tbody {
+  color: #f0ffffde;
+  text-align: center;
 }
 
-td, th {
-  border: 1px solid black;
-  padding: 2px;
-  text-align: left;
+.customers {
+  border-collapse: separate;
+  cursor: pointer;
+  font-family: StarWars , serif;
+  font-size: 8pt;
+  left: 20px;
+  position: absolute;
+  right: 20px;
+  top: 300px;
 }
 
-tr:nth-child( even ) {
-  background-color: lightgray;
-}
-
-li {
+ul {
   list-style-type: none;
+}
+
+.customers td, .customers th {
+  border-radius: 8px;
+}
+
+.customers tr:nth-child( even ) {
+  background-color: #58546381;
+}
+
+.customers tr:hover {
+  background-color: #58546381;
+}
+
+.customers th {
+  background-color: #2f2f2f;
+  border-radius: 8px;
+  color: white;
+  font-family: Verdana , Geneva , Tahoma , sans-serif;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  text-transform: uppercase;
 }
