@@ -82,6 +82,7 @@ function Filter() {
               <div data-testid="filter" key={ i }>
                 <span>{`${e.columm} ${e.similarity} ${e.value} ${' '}`}</span>
                 <button
+                  data-testid={ `button-delete-${i}` }
                   className="btn__delete"
                   type="button"
                   onClick={ () => deleteFilter(e) }
