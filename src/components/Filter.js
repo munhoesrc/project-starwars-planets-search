@@ -1,4 +1,5 @@
 import { useContext } from 'react';
+import { BsTrash } from 'react-icons/bs';
 import ContextTable from '../context/ContextTable';
 
 function Filter() {
@@ -7,9 +8,8 @@ function Filter() {
   const { similarity, handleSimilarity } = useContext(ContextTable);
   const { valueFilter, handleValue } = useContext(ContextTable);
   const { handleBtnFilter } = useContext(ContextTable);
-
-  const columms = ['population', 'orbital_period', 'diameter',
-    'rotation_period', 'surface_water'];
+  const { filters, selectFilter } = useContext(ContextTable);
+  const { deleteFull, deleteFilter } = useContext(ContextTable);
 
   return (
     <div>
@@ -30,7 +30,7 @@ function Filter() {
           data-testid="column-filter"
         >
           {
-            columms.map((e) => (
+            filters.map((e) => (
               <option key={ e } value={ e }>
                 {e}
               </option>
@@ -58,8 +58,41 @@ function Filter() {
           onClick={ handleBtnFilter }
           data-testid="button-filter"
         >
-          Filtar
+          Filtrar
         </button>
+      </div>
+      <div>
+        <br />
+        <span>Filtros Selecionados:</span>
+        {
+          selectFilter.length > 0
+          && (
+            <button
+              type="button"
+              data-testid="button-remove-filters"
+              onClick={ deleteFull }
+            >
+              Excluir todos
+            </button>
+          )
+        }
+        <div>
+          {
+            selectFilter?.map((e, i) => (
+              <div data-testid="filter" key={ i }>
+                <span>{`${e.columm} ${e.similarity} ${e.value} ${' '}`}</span>
+                <button
+                  className="btn__delete"
+                  type="button"
+                  onClick={ () => deleteFilter(e) }
+                >
+                  <BsTrash fontSize="16" />
+                </button>
+
+              </div>
+            ))
+          }
+        </div>
       </div>
     </div>
   );

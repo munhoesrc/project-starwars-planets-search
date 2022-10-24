@@ -34,6 +34,15 @@
   width: 20%;
 }
 
+.btn__delete {
+  background: transparent;
+  border: none;
+  color: red;
+  cursor: pointer;
+  margin: 0 10px;
+  outline: none;
+}
+
 table {
   border-collapse: collapse;
   font-family: Times New Roman , Times , serif;
