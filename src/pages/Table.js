@@ -11,7 +11,7 @@ function Table() {
         <Filter />
       </div>
       <br />
-      <table>
+      <table data-testid="tabela">
 
         <tr>
           <th>Name</th>
