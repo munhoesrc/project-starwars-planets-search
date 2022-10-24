@@ -23,8 +23,9 @@ function Filter() {
           data-testid="name-filter"
         />
       </div>
-      <div>
+      <div className="all__filters">
         <select
+          className="first__filter"
           value={ columm }
           onChange={ handleColumm }
           data-testid="column-filter"
@@ -39,6 +40,7 @@ function Filter() {
 
         </select>
         <select
+          className="second__filter"
           value={ similarity }
           onChange={ handleSimilarity }
           data-testid="comparison-filter"
@@ -48,12 +50,14 @@ function Filter() {
           <option value="igual a">igual a</option>
         </select>
         <input
+          className="value__filter"
           type="number"
           value={ valueFilter }
           onChange={ handleValue }
           data-testid="value-filter"
         />
         <button
+          className="button__filter"
           type="button"
           onClick={ handleBtnFilter }
           data-testid="button-filter"
@@ -64,10 +68,12 @@ function Filter() {
       <div>
         <br />
         <span>Filtros Selecionados:</span>
+        {' '}
         {
           selectFilter.length > 0
           && (
             <button
+              className="btn__deleteFull"
               type="button"
               data-testid="button-remove-filters"
               onClick={ deleteFull }

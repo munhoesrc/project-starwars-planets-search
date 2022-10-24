@@ -2,11 +2,16 @@ import React from 'react';
 import './App.css';
 import ProviderTable from './context/ProviderTable';
 import Table from './pages/Table';
+import logo from './img/mylogoStarWars.png';
 
 function App() {
   return (
     <ProviderTable>
-      <h1 className="title">Star Wars</h1>
+      <img
+        src={ logo }
+        className="logo-image"
+        alt="logo Star Wars"
+      />
       <Table />
     </ProviderTable>
   );

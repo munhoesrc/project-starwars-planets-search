@@ -18,12 +18,11 @@ body {
   height: 100vh;
 }
 
-.title {
-  font-family: StarWars , serif;
-  font-size: 42pt;
-  font-weight: 500;
-  margin: 2vw 0 1vw;
-  text-align: center;
+.logo-image {
+  display: block;
+  margin: auto;
+  width: 25rem;
+
 }
 
 .input__search {
@@ -42,6 +41,72 @@ body {
   width: 20%;
 }
 
+
+/* STYLE DOS FILTROS */
+.all__filters {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.first__filter {
+  background: #2f2d36;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 10px 40px white;
+  box-sizing: border-box;
+  color: #f0ffffde;
+  font-size: 12pt;
+  outline: none;
+  padding: 15px;
+}
+
+.second__filter {
+  background: #2f2d36;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 10px 40px white;
+  box-sizing: border-box;
+  color: #f0ffffde;
+  font-size: 12pt;
+  outline: none;
+  padding: 15px;
+}
+
+.value__filter {
+  background: #2f2d36;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 10px 40px white;
+  box-sizing: border-box;
+  color: #f0ffffde;
+  font-size: 12pt;
+  outline: none;
+  padding: 15px;
+}
+
+.button__filter {
+  background: #2f2d36;
+  border: 1px solid yellow;
+  border-radius: 10px;
+  box-sizing: border-box;
+  color: #f0ffffde;
+  font-size: 12pt;
+  outline: none;
+  padding: 15px;
+}
+
+.btn__deleteFull {
+  background: red;
+  border: none;
+  border-radius: 10px;
+  font-family: StarWars , serif;
+  padding: 3px;
+}
+
 .btn__delete {
   background: transparent;
   border: none;
@@ -49,6 +114,11 @@ body {
   cursor: pointer;
   margin: 0 10px;
   outline: none;
+}
+
+span {
+  font-family: StarWars , serif;
+  margin-left: 30px;
 }
 
 /* STYLE DA TABLEA */
@@ -65,7 +135,7 @@ body {
   left: 20px;
   position: absolute;
   right: 20px;
-  top: 300px;
+  top: 500px;
 }
 
 ul {
